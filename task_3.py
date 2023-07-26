@@ -10,7 +10,7 @@ import math
 
 def add_fractions(fraction1: str, fraction2: str) -> tuple[str, str]:
     """
-    Метод возвращающий сумму и произведение дробей
+    Функция возвращающий сумму и произведение дробей
     :param fraction1: первая дробь
     :param fraction2: вторая дробь
     :return: сумма и произведение дробей
@@ -28,10 +28,10 @@ def add_fractions(fraction1: str, fraction2: str) -> tuple[str, str]:
     product_denom = denom1 * denom2
 
     # Возвращение суммы и произведения в виде дробей
-    return f"{int(sum_num / math.gcd(sum_num, sum_denom))}/" \
-           f"{int(sum_denom / math.gcd(sum_num, sum_denom))}", \
-           f"{int(product_num / math.gcd(product_num, product_denom))}/" \
-           f"{int(product_denom / math.gcd(product_num, product_denom))}"
+    return f"{sum_num // math.gcd(sum_num, sum_denom)}/" \
+           f"{sum_denom // math.gcd(sum_num, sum_denom)}", \
+           f"{product_num // math.gcd(product_num, product_denom)}/" \
+           f"{product_denom // math.gcd(product_num, product_denom)}"
 
 
 # Пример использования программы
