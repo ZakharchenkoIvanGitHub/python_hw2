@@ -6,7 +6,7 @@ import math
 
 def solve_quadratic_equation(a: float, b: float, c: float) -> tuple[float, float] | float | tuple[complex, complex]:
     """
-    метод решения квадратного уравнения с отрицательным дискриминантом
+    Функция решения квадратного уравнения с отрицательным дискриминантом
     :param a: коэффициент a
     :param b: коэффициент b
     :param c: коэффициент c
